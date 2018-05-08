@@ -1,0 +1,27 @@
+{
+  "name": "munchkin-level-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "grunt": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.1",
+    "grunt-postcss": "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecsanchesjr/munchkin-level-counter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecsanchesjr/munchkin-level-counter/issues"
+  },
+  "homepage": "https://github.com/ecsanchesjr/munchkin-level-counter#readme"
+}
