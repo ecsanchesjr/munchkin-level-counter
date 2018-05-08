@@ -1,0 +1,10 @@
+// Fonts
+$font-base: 'Gloria Hallelujah', cursive;
+$font-secondary: 'Permanent Marker', cursive;
+
+* {
+   font-family: $font-base;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
