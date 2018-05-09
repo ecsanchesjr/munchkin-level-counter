@@ -1,16 +1,51 @@
 // Fonts
 $font-base: 'Gloria Hallelujah', cursive;
 $font-secondary: 'Permanent Marker', cursive;
+$font-btn: 'Roboto';
 
 // Colors
 $color-primary: #D63031;
 $color-secondary: #145C9E;
 $color-foreground: #231D20;
-$color-background: #FDFFFC;
+$color-background: #eee;
+
+// Sizes vars
+$input-height: 30px;
+$input-padding: 10px;
 
 * {
    font-family: $font-base;
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+}
+
+body {
+   background-color: $color-background;
+}
+
+a {
+   font-family: $font-btn;
+   border-radius: 2px;
+   color: $color-foreground;
+   padding: 5px 10px;
+   font-size: 1.5rem;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+input {
+   height: $input-height;
+   width: 100%;
+}
+
+// Mixins
+
+@mixin input-placeholder {
+   &.placeholder { @content; }
+   &:-moz-placeholder { @content; }
+   &::-moz-placeholder { @content; }
+   &:-ms-input-placeholder { @content; }
+   &::-webkit-input-placeholder { @content; }
 }
