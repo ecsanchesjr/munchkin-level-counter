@@ -59,4 +59,3 @@ typings/
 
 .sass-cache/
 resources/styles/*.map
-package-lock.json

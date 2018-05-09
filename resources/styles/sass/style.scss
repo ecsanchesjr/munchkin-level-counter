@@ -23,21 +23,30 @@
    text-align: left;
    position: relative;
    padding: 10px 5px;
-   border: 1px solid $color-foreground;
+   //border: 1px solid $color-foreground;
 
    .name {
-      width: 60%;
+      width: 65%;
       display: inline-block;
    }
    .bonus {
-      width: 15%;
+      width: 18%;
       display: inline-block;
-      margin-left: 4%;
+      margin-left: 2%;
    }
    a {
       position: absolute;
       bottom: 3px;
       right: 3px;
+
+      color: $color-secondary;
+      transition: 1s color transform ease;
+
+      &:hover {
+         color: $color-primary;
+         transform: scale(1.1);
+         background: transparent;
+      }
    }
 
    label {
@@ -53,7 +62,7 @@
       top: ($input-height / 2) + $input-padding / 4;
       z-index: 2;
       font-size: 16px;
-      transition: all 200ms ease-in-out;
+      transition: all 0.5s ease;
       width: 100%;
       cursor: text;
    }
@@ -61,15 +70,14 @@
       position: absolute;
       top: $input-height / 2;
       z-index: 1;
-      font-size: 16px;
       border: 0;
       border-bottom: 2px solid $color-secondary;
-      transition: border-color 200ms ease-in-out;
+      transition: border-color 0.5s ease;
    }
    input:focus,
    input:valid {
       & + .placeholder {
-         top: 0;
+         top: -5px;
          cursor: inherit;
          font-size: 14px;
          color: $color-primary;
@@ -81,10 +89,10 @@
 .item-list {
    height: 150px;
    width: 100%;
-   margin: 20px auto;
+   margin: 20px auto 0px auto;
    overflow: hidden;
    overflow-y: scroll;
-   border: 2px solid $color-foreground;
+   border: 2px solid $color-background;
    padding: 5px;
 
    li {
@@ -158,15 +166,47 @@
 
    h2 {
       font-size: 2.5rem;
-      line-height: 2rem;
+      line-height: 2.6rem;
    }
-   h5 {
-      font-size: 1.7rem;
+   .level-control {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h5 {
+         font-size: 1.7rem;
+      }
+
+      i {
+         color: $color-primary;
+         font-size: 1.5rem;
+         padding: 10px;
+         border-radius: 50%;
+         
+         &:before {
+            transition: 0.5s all ease;
+         }
+   
+         &:hover {
+            &:before {
+               transform: scale(1.6);
+            }
+         }
+      }
    }
    i {
-      font-size: 2rem;
+      font-size: 2.5rem;
       line-height: 2rem;
       cursor: pointer;
       margin: 0 auto;
+
+      &:before {
+         transition: 0.5s all ease;
+      }
+
+      &:hover {
+         &:before {
+            transform: scale(1.1);
+         }
+      }
    }
 }

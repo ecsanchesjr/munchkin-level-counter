@@ -7,7 +7,8 @@ $font-btn: 'Roboto';
 $color-primary: #D63031;
 $color-secondary: #145C9E;
 $color-foreground: #231D20;
-$color-background: #eee;
+//$color-background: #eee;
+$color-background: #534343;
 
 // Sizes vars
 $input-height: 30px;
@@ -21,7 +22,7 @@ $input-padding: 10px;
 }
 
 body {
-   background-color: $color-background;
+   background-color: #534343;
 }
 
 a {
@@ -37,6 +38,7 @@ a {
 
 input {
    height: $input-height;
+   color: $color-foreground;
    width: 100%;
 }
 

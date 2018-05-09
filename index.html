@@ -10,20 +10,20 @@
    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
    <link rel="stylesheet" href="resources/styles/style.css">
 </head>
-<style>
-   hr {
-      margin: 20px 0;
-   }
-</style>
-
 <body>
 
    <div class="player">
-      <h2>Nome Batata</h2>
-      <h5>Level 99</h5>
+      <h2>Batatinha quando nasce</h2>
+      <div class="level-control">
+         <i class="ion-chevron-down"></i>
+         <i class="ion-minus-round"></i>
+         <h5>Level 99</h5>
+         <i class="ion-plus-round"></i>
+         <i class="ion-chevron-up"></i>
+      </div>
       <i class="ion-male"></i>
-      <i class="ion-female"></i>
-      
+      <!-- <i class="ion-female"></i> -->
+
       <div style="border: 1px solid black; height: 50px">
          aqui vai os pills
       </div>
@@ -53,7 +53,7 @@
          <div class="name">
             <label>
                <input type="text" required>
-               <span class="placeholder">Nome do item</span>
+               <span class="placeholder">Modificador</span>
             </label>
          </div>
          <div class="bonus">
@@ -62,7 +62,9 @@
                <span class="placeholder">Bônus</span>
             </label>
          </div>
-         <a href="" class="btn-flat">Add</a>
+         <a href="" class="btn-flat">
+            <i class="ion-plus-circled"></i>
+         </a>
       </div>
 
       <div class="atk">
@@ -71,38 +73,11 @@
       </div>
    </div>
 
+   <!-- Ignore -->
    <div class="player">
-      <a href="" class="btn-flat">Button Flat</a>
-      <hr>
       <a href="" class="btn-raised">Button Raised</a>
-      <hr>
-      <h2>Nome Batata</h2>
-      <hr>
-      <h5>Level 99</h5>
-      <hr>
-      <i class="ion-male"></i>
-      <i class="ion-female"></i>
-      <hr>
-      <div class="item-form">
-         <label>
-            <input type="text" required>
-            <span class="placeholder">Nome do item / Bônus</span>
-         </label>
       </div>
-      <hr>
-      <ul class="item-list">
-         <li>
-            <p>Machado grandão</p>
-            <span>99</span>
-            <i class="ion-close-round"></i>
-         </li>
-         <li>
-            <p>Machado grandão gigante pra caralho</p>
-            <span>199</span>
-            <i class="ion-close-round"></i>
-         </li>
-      </ul>
-   </div>
 </body>
 <script src="resources/scripts/script.js"></script>
+
 </html>

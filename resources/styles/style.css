@@ -6,7 +6,7 @@
           box-sizing: border-box; }
 
 body {
-  background-color: #eee; }
+  background-color: #534343; }
 
 a {
   font-family: "Roboto";
@@ -21,6 +21,7 @@ a {
 
 input {
   height: 30px;
+  color: #231D20;
   width: 100%; }
 
 .btn-flat {
@@ -30,7 +31,7 @@ input {
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease; }
   .btn-flat:hover {
-    background: #eee; }
+    background: #534343; }
 
 .btn-raised {
   background-color: #D63031;
@@ -46,19 +47,28 @@ input {
 .item-form {
   text-align: left;
   position: relative;
-  padding: 10px 5px;
-  border: 1px solid #231D20; }
+  padding: 10px 5px; }
   .item-form .name {
-    width: 60%;
+    width: 65%;
     display: inline-block; }
   .item-form .bonus {
-    width: 15%;
+    width: 18%;
     display: inline-block;
-    margin-left: 4%; }
+    margin-left: 2%; }
   .item-form a {
     position: absolute;
     bottom: 3px;
-    right: 3px; }
+    right: 3px;
+    color: #145C9E;
+    -webkit-transition: 1s color transform ease;
+    -o-transition: 1s color transform ease;
+    transition: 1s color transform ease; }
+    .item-form a:hover {
+      color: #D63031;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1);
+      background: transparent; }
   .item-form label {
     position: relative;
     display: block;
@@ -71,27 +81,26 @@ input {
     top: 17.5px;
     z-index: 2;
     font-size: 16px;
-    -webkit-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     width: 100%;
     cursor: text; }
   .item-form input {
     position: absolute;
     top: 15px;
     z-index: 1;
-    font-size: 16px;
     border: 0;
     border-bottom: 2px solid #145C9E;
-    -webkit-transition: border-color 200ms ease-in-out;
-    -o-transition: border-color 200ms ease-in-out;
-    transition: border-color 200ms ease-in-out; }
+    -webkit-transition: border-color 0.5s ease;
+    -o-transition: border-color 0.5s ease;
+    transition: border-color 0.5s ease; }
   .item-form input:focus,
   .item-form input:valid {
     border-bottom: 3px solid #D63031; }
     .item-form input:focus + .placeholder,
     .item-form input:valid + .placeholder {
-      top: 0;
+      top: -5px;
       cursor: inherit;
       font-size: 14px;
       color: #D63031; }
@@ -99,10 +108,10 @@ input {
 .item-list {
   height: 150px;
   width: 100%;
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   overflow: hidden;
   overflow-y: scroll;
-  border: 2px solid #231D20;
+  border: 2px solid #534343;
   padding: 5px; }
   .item-list li {
     display: -webkit-box;
@@ -192,38 +201,48 @@ input {
   text-align: center; }
   .player h2 {
     font-size: 2.5rem;
-    line-height: 2rem; }
-  .player h5 {
-    font-size: 1.7rem; }
+    line-height: 2.6rem; }
+  .player .level-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .player .level-control h5 {
+      font-size: 1.7rem; }
+    .player .level-control i {
+      color: #D63031;
+      font-size: 1.5rem;
+      padding: 10px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+      .player .level-control i:before {
+        -webkit-transition: 0.5s all ease;
+        -o-transition: 0.5s all ease;
+        transition: 0.5s all ease; }
+      .player .level-control i:hover:before {
+        -webkit-transform: scale(1.6);
+            -ms-transform: scale(1.6);
+                transform: scale(1.6); }
   .player i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2rem;
     cursor: pointer;
     margin: 0 auto; }
+    .player i:before {
+      -webkit-transition: 0.5s all ease;
+      -o-transition: 0.5s all ease;
+      transition: 0.5s all ease; }
+    .player i:hover:before {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */
-
-.main-box{
-  width: 90%;
-  min-height: 40px;
-  border: 1px solid black;
-  margin: 0 auto;
-  cursor: text;
-}
-
-.main-box li{
-  display: inline-block;
-  padding: 2px;
-  margin: 5px;
-  border: 1px solid black;
-  border-radius: 5px;
-  cursor: default;
-}
-
-.main-box li i{
-  cursor: pointer;
-}
-
-.main-box input{
-  border: none;
-}
