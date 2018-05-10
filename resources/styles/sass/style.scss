@@ -17,6 +17,24 @@
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
    }
 }
+// ------- end components
+
+nav {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background: white;
+
+   * {
+      display: inline-block;
+      color: $color-foreground;
+      font-size: 1.5rem;
+   }
+
+   a {
+      font-family: $font-base;
+   }
+}
 
 .item-form {
    text-align: left;
@@ -140,7 +158,7 @@
 
 .player {
    width: 500px;
-   margin: 50px auto;
+   margin: 100px auto 20px auto;
    background: white;
    padding: 20px;
    text-align: center;
@@ -164,9 +182,6 @@
          border-radius: 50%;
 
          transition: 0.3s all ease;
-         // &.ion-plus-round, .ion-minus-round {
-         //    transition: 0.3s  ease;
-         // }
 
          &.ion-plus-round:hover {
             color: $color-secondary;
