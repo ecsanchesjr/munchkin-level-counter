@@ -1,5 +1,4 @@
 @import "config.scss";
-
 // Components
 .btn-flat {
    color: $color-secondary;
@@ -22,9 +21,7 @@
 .item-form {
    text-align: left;
    position: relative;
-   padding: 10px 5px;
-   //border: 1px solid $color-foreground;
-
+   padding: 10px 5px; //border: 1px solid $color-foreground;
    .name {
       width: 65%;
       display: inline-block;
@@ -36,19 +33,10 @@
    }
    a {
       position: absolute;
-      bottom: 3px;
-      right: 3px;
-
+      bottom: 0px;
+      right: 0px;
       color: $color-secondary;
-      transition: 1s color transform ease;
-
-      &:hover {
-         color: $color-primary;
-         transform: scale(1.1);
-         background: transparent;
-      }
    }
-
    label {
       position: relative;
       display: block;
@@ -76,7 +64,7 @@
    }
    input:focus,
    input:valid {
-      & + .placeholder {
+      &+.placeholder {
          top: -5px;
          cursor: inherit;
          font-size: 14px;
@@ -94,7 +82,6 @@
    overflow-y: scroll;
    border: 2px solid $color-background;
    padding: 5px;
-
    li {
       display: flex;
       justify-content: space-between;
@@ -103,21 +90,20 @@
       padding: 5px 3px;
       margin: 10px 0;
       transition: 0.3s all ease;
-
       &:hover {
          border-color: $color-secondary;
          color: $color-secondary;
          transform: scale(1.01);
          cursor: default;
       }
-
       p {
          flex: 75%;
          font-size: 1.1rem;
          word-wrap: normal;
          line-height: 1.4rem;
       }
-      i, span {
+      i,
+      span {
          font-size: 1.5rem;
          line-height: 1.5rem;
       }
@@ -129,7 +115,6 @@
          flex: 10%;
          transition: 0.3s ease all;
          border-radius: 3px;
-         
          &:hover {
             color: $color-primary;
             transform: scale(1.3);
@@ -143,19 +128,15 @@
    display: flex;
    align-items: center;
    justify-content: center;
-
    img {
       width: 10%;
       margin: 0 30px;
    }
-
    p {
       font-size: 3rem;
       line-height: 3rem;
    }
 }
-
-
 
 .player {
    width: 500px;
@@ -163,33 +144,35 @@
    background: white;
    padding: 20px;
    text-align: center;
-
    h2 {
       font-size: 2.5rem;
       line-height: 2.6rem;
    }
    .level-control {
+      width: 50%;
+      margin: 0 auto;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       h5 {
-         font-size: 1.7rem;
+         font-size: 1.75rem;
       }
-
       i {
-         color: $color-primary;
-         font-size: 1.5rem;
+         color: $color-foreground;
+         font-size: 2rem;
          padding: 10px;
          border-radius: 50%;
-         
-         &:before {
-            transition: 0.5s all ease;
+
+         transition: 0.3s all ease;
+         // &.ion-plus-round, .ion-minus-round {
+         //    transition: 0.3s  ease;
+         // }
+
+         &.ion-plus-round:hover {
+            color: $color-secondary;
          }
-   
-         &:hover {
-            &:before {
-               transform: scale(1.6);
-            }
+         &.ion-minus-round:hover {
+            color: $color-primary;
          }
       }
    }
@@ -198,15 +181,5 @@
       line-height: 2rem;
       cursor: pointer;
       margin: 0 auto;
-
-      &:before {
-         transition: 0.5s all ease;
-      }
-
-      &:hover {
-         &:before {
-            transform: scale(1.1);
-         }
-      }
    }
 }
