@@ -16,70 +16,12 @@
    <header>
       <nav>
          <h1>Munchkin Level Counter</h1>
-         <a href="">Add new Player</a>
-         <a href="">New Game</a>
+         <a href="#" onclick=addNewPlayer()>Add new Player</a>
+         <a href="#" onclick="newGame()">New Game</a>
       </nav>
    </header>
 
-   <main>
-      <div class="player">
-         <h2>Batatinha quando nasce</h2>
-         <div class="level-control">
-            <i class="ion-minus-round"></i>
-            <h5>Level 99</h5>
-            <i class="ion-plus-round"></i>
-         </div>
-         <i class="ion-male"></i>
-         <!-- <i class="ion-female"></i> -->
-
-         <div style="border: 1px solid black; height: 50px">
-            aqui vai os pills
-         </div>
-         <div style="border: 1px solid black; height: 50px">
-            aqui vai os pills
-         </div>
-
-         <ul class="item-list">
-            <li>
-               <p>Ralador de Queijo</p>
-               <span>99</span>
-               <i class="ion-close-round"></i>
-            </li>
-            <li>
-               <p>Motossera grandona</p>
-               <span>99</span>
-               <i class="ion-close-round"></i>
-            </li>
-            <li>
-               <p>Espetinho de Rato</p>
-               <span>99</span>
-               <i class="ion-close-round"></i>
-            </li>
-         </ul>
-
-         <div class="item-form">
-            <div class="name">
-               <label>
-                  <input type="text" required>
-                  <span class="placeholder">Modificador</span>
-               </label>
-            </div>
-            <div class="bonus">
-               <label>
-                  <input type="text" required>
-                  <span class="placeholder">Bônus</span>
-               </label>
-            </div>
-            <a href="">
-               <i class="ion-plus-circled"></i>
-            </a>
-         </div>
-
-         <div class="atk">
-            <img src="resources/img/sword.svg" alt="Damage">
-            <p>9999</p>
-         </div>
-      </div>
+   <main id="main-section">
    </main>
 
    <!-- Ignore -->
@@ -87,6 +29,8 @@
       <a href="" class="btn-raised">Button Raised</a>
    </div>
 </body>
-<script src="resources/scripts/script.js"></script>
+<script src="resources/scripts/utils.js"></script>
+<script src="resources/scripts/classes.js"></script>
+<script src="resources/scripts/index.js"></script>
 
 </html>

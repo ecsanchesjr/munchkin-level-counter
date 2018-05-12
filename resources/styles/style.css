@@ -24,6 +24,17 @@ input {
   color: #231D20;
   width: 100%; }
 
+main {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
 .btn-flat {
   color: #145C9E;
   background: transparent;
@@ -48,7 +59,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white; }
+  background: white;
+  z-index: 200; }
   nav * {
     display: inline-block;
     color: #231D20;
@@ -71,7 +83,12 @@ nav {
     position: absolute;
     bottom: 0px;
     right: 0px;
-    color: #145C9E; }
+    color: #145C9E;
+    -webkit-transition: 0.5s all ease-out;
+    -o-transition: 0.5s all ease-out;
+    transition: 0.5s all ease-out; }
+    .item-form a:hover {
+      color: #D63031; }
   .item-form label {
     position: relative;
     display: block;
@@ -197,17 +214,19 @@ nav {
     font-size: 3rem;
     line-height: 3rem; }
 
-.player {
-  width: 500px;
-  margin: 100px auto 20px auto;
+.player, .player-placeholder {
+  width: 400px;
+  margin-top: 100px;
   background: white;
   padding: 20px;
-  text-align: center; }
-  .player h2 {
+  margin-right: 25px;
+  text-align: center;
+  position: relative; }
+  .player h2, .player-placeholder h2 {
     font-size: 2.5rem;
     line-height: 2.6rem; }
-  .player .level-control {
-    width: 50%;
+  .player .level-control, .player-placeholder .level-control {
+    width: 75%;
     margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
@@ -221,9 +240,9 @@ nav {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-    .player .level-control h5 {
+    .player .level-control h5, .player-placeholder .level-control h5 {
       font-size: 1.75rem; }
-    .player .level-control i {
+    .player .level-control i, .player-placeholder .level-control i {
       color: #231D20;
       font-size: 2rem;
       padding: 10px;
@@ -232,14 +251,26 @@ nav {
       -webkit-transition: 0.3s all ease;
       -o-transition: 0.3s all ease;
       transition: 0.3s all ease; }
-      .player .level-control i.ion-plus-round:hover {
+      .player .level-control i.ion-plus-round:hover, .player-placeholder .level-control i.ion-plus-round:hover {
         color: #145C9E; }
-      .player .level-control i.ion-minus-round:hover {
+      .player .level-control i.ion-minus-round:hover, .player-placeholder .level-control i.ion-minus-round:hover {
         color: #D63031; }
-  .player i {
+  .player i, .player-placeholder i {
     font-size: 2.5rem;
     line-height: 2rem;
     cursor: pointer;
     margin: 0 auto; }
+  .player .close-btn, .player-placeholder .close-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    cursor: pointer; }
+
+.player-placeholder input {
+  height: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=style.css.map */
