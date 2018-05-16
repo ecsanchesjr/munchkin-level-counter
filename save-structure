@@ -1,0 +1,58 @@
+<div class="player">
+         <img class="close-btn" src="resources/img/closePlayer.svg" alt="Close">
+         <h2>Batatinha quando nasce</h2>
+         <div class="level-control">
+            <i class="ion-minus-round"></i>
+            <h5>Level 99</h5>
+            <i class="ion-plus-round"></i>
+         </div>
+         <i class="ion-male"></i>
+
+         <div style="border: 1px solid black; height: 50px">
+            aqui vai os pills
+         </div>
+         <div style="border: 1px solid black; height: 50px">
+            aqui vai os pills
+         </div>
+
+         <ul class="item-list">
+            <li>
+               <p>Ralador de Queijo</p>
+               <span>99</span>
+               <i class="ion-close-round"></i>
+            </li>
+            <li>
+               <p>Motossera grandona</p>
+               <span>99</span>
+               <i class="ion-close-round"></i>
+            </li>
+            <li>
+               <p>Espetinho de Rato</p>
+               <span>99</span>
+               <i class="ion-close-round"></i>
+            </li>
+         </ul>
+
+         <div class="item-form">
+            <div class="name">
+               <label>
+                  <input type="text" required>
+                  <span class="placeholder">Modificador</span>
+               </label>
+            </div>
+            <div class="bonus">
+               <label>
+                  <input type="text" required>
+                  <span class="placeholder">Valor</span>
+               </label>
+            </div>
+            <a href="">
+               <i class="ion-plus-circled"></i>
+            </a>
+         </div>
+
+         <div class="atk">
+            <img src="resources/img/sword.svg" alt="Damage">
+            <p>9999</p>
+         </div>
+      </div>
