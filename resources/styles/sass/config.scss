@@ -13,6 +13,7 @@ $color-background: #534343;
 // Sizes vars
 $input-height: 30px;
 $input-padding: 10px;
+$pillbox-options-height: 150px;
 
 * {
    font-family: $font-base;
@@ -57,4 +58,9 @@ main {
    &::-moz-placeholder { @content; }
    &:-ms-input-placeholder { @content; }
    &::-webkit-input-placeholder { @content; }
+}
+
+@mixin default-border($w: 2px) {
+    border: $w solid $color-background;
+    border-radius: 0px;
 }

@@ -1,0 +1,84 @@
+.pillbox{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: text;
+    position: relative;
+}
+
+.pillbox-input{
+    border: none;
+}
+
+
+
+.pillbox .pill{
+    display: inline-block;
+    padding: 2px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.pillbox .pill *{
+    display: inline-block;
+}
+
+.pillbox .pill span{
+    cursor: pointer;
+}
+
+.pillbox-select{
+    display: none;
+}
+
+.pillbox-options{
+    overflow-y: scroll;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+    cursor: default;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    left: 0;
+    z-index: 200;
+}
+
+.pillbox-input:focus .pillbox-options{
+    background-color: black;
+    display: inline;
+}
+
+.show{
+    display: inline;
+}
+
+.pillbox-options .option{
+    cursor: pointer;
+}
+
+.pillbox-options .NGoption{
+    padding: 10px 5px 0 5px;
+}
+
+.pillbox-options .Goption{
+    padding: 10px 5px 0 50px;
+}
+
+.pillbox-options .selected{
+    background-color: rgba(0,0,255,0.75);
+}
+
+.pillbox-options .active{
+    background-color: rgba(255,0,0,0.75);
+}
+
+.pillbox-options .group{
+    padding: 10px 5px 0 5px;
+    font-weight: bold;
+}

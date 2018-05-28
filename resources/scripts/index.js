@@ -16,6 +16,7 @@ addNewPlayer = () => {
             newPlayer(id, playerName);
             console.log(game);
             playerInputName.parentElement.remove();
+            initPill(id);
          }
       }
    });
@@ -47,5 +48,9 @@ newPlayer = (id, name) => {
    mainEl.appendChild(createtHtml(playerEntry(id, name)));
 
    document.querySelector("#player-"+id+" #delete-player").addEventListener("click", event => deletePlayer(id) );
+};
+
+initPill = (id) => {
+    document.querySelector("#player-"+id).querySelector("#pillbox-"+id).PillBox();
 };
 

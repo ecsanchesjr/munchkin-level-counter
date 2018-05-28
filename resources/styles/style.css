@@ -132,6 +132,8 @@ nav {
   overflow: hidden;
   overflow-y: scroll;
   border: 2px solid #534343;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
   padding: 5px; }
   .item-list li {
     display: -webkit-box;
@@ -206,7 +208,10 @@ nav {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
   .atk img {
     width: 10%;
     margin: 0 30px; }
@@ -221,7 +226,20 @@ nav {
   padding: 20px;
   margin-right: 25px;
   text-align: center;
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
   .player h2, .player-placeholder h2 {
     font-size: 2.5rem;
     line-height: 2.6rem; }
@@ -272,5 +290,33 @@ nav {
   margin-top: 20px;
   font-size: 20px;
   border: 1px solid black; }
+
+.pillbox {
+  border: 2px solid #534343;
+  -webkit-border-radius: 0px;
+          border-radius: 0px;
+  text-align: left;
+  min-height: 52px; }
+  .pillbox .pillbox-input {
+    width: auto;
+    max-width: 100%; }
+  .pillbox .pill {
+    border: 1px solid #534343;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    padding: 0 2px;
+    margin: 2px 2px 0 0; }
+  .pillbox .pillbox-options {
+    border: 2px solid #534343;
+    -webkit-border-radius: 0px;
+            border-radius: 0px;
+    height: 150px; }
+    .pillbox .pillbox-options .selected {
+      background-color: white;
+      color: #145C9E; }
+    .pillbox .pillbox-options .NGoption {
+      padding: 5px 2px 0 5px; }
+    .pillbox .pillbox-options .Goption {
+      padding: 5px 2px 0 20px; }
 
 /*# sourceMappingURL=style.css.map */

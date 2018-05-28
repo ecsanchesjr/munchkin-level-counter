@@ -32,12 +32,19 @@ const playerEntry = (id, name) => [`div`, id, [`player`], `<img class="close-btn
 </div>
 <i class="ion-male"></i>
 
-<div style="border: 1px solid black; height: 50px">
-   aqui vai os pills
-</div>
-<div style="border: 1px solid black; height: 50px">
-   aqui vai os pills
-</div>
+<select multiple="multiple" name="" id="pillbox-${id}">
+        <optgroup label="Classes">
+            <option value="warrior">Warrior</option>
+            <option value="mage">Mage</option>
+            <option value="cleric">Cleric</option>
+            <option value="thief">Thief</option>
+        </optgroup>
+        <optgroup label="Races">
+            <option value="elf">Elf</option>
+            <option value="halfling">Halfling</option>
+            <option value="dwarf">Dwarf</option>
+        </optgroup>
+    </select>
 
 <ul class="item-list">
    <li>
